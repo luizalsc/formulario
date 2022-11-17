@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Formulário</title>
+
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <main class="main">
+
+        <div class="texto-inicial">
+            <h1 class="titulo1">FICOU COM DÚVIDA?<br>NOS MANDE UMA MENSAGEM!</h1>
+            
+            <p class="paragrafo">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+
+        <form class="formulario" action="./JS/index.js" method="post">
+
+            <input class="campo" type="text" name="nome" placeholder="Nome completo*" id="nome">
+            <label for="nome" class="rotulo">campo obrigatório</label>
+
+            <input class="campo"type="text" name="email" placeholder="Email*" id="email">
+            <label for="email" class="rotulo">campo obrigatório</label>
+
+            <input class="campo"type="number" name="telefone" placeholder="Telefone*" id="telefone">
+            <label for="telefone" class="rotulo">campo obrigatório</label>
+
+            <textarea class="campo mensagem"name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem*" id="mensagem"></textarea>
+            <label for="mensagem" class="rotulo">campo obrigatório</label>
+
+            <p class="campo-obrigatorio">*campos obrigatórios</p>
+            
+            <input class="btn-enviar" type="submit" value="Enviar">
+        </form>
+
+    </main>
+    <script src="./JS/index.js" type="text/javascript"></script>
+</body>
+</html>
